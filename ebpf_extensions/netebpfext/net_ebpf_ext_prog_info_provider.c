@@ -1,8 +1,8 @@
 // Copyright (c) eBPF for Windows contributors
 // SPDX-License-Identifier: MIT
 
+
 #include "ebpf_extension_uuids.h"
-#include "ebpf_platform.h"
 #include "ebpf_program_types.h"
 #include "net_ebpf_ext_prog_info_provider.h"
 

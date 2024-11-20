@@ -6,7 +6,7 @@
  * @brief This file implements the XDP_TEST program type hook and helper functions on eBPF for Windows.
  */
 
-#include "ebpf_shared_framework.h"
+#include "net_ebpf_ext.h"
 #include "net_ebpf_ext_xdp.h"
 
 //

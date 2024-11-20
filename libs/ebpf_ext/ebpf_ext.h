@@ -14,6 +14,8 @@
 #include "ebpf_program_types.h"
 #include "ebpf_windows.h"
 
+#include <specstrings.h>
+#include <stdint.h>
 #include <guiddef.h>
 #include <netioapi.h>
 #include <netiodef.h>

@@ -9,8 +9,8 @@
 #include <ntintsafe.h>
 #pragma warning(pop)
 #include <ntifs.h>
-#include <netioddk.h>
 #include <ntddk.h>
+#include <netioddk.h>
 #pragma warning(push)
 #pragma warning(disable : 28196) // Inconsistent annotation for '_umul128'
 #include <ntstrsafe.h>

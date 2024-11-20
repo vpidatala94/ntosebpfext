@@ -41,9 +41,9 @@ xdp_hook_t(xdp_md_t* context);
 // XDP_TEST helper functions.
 #define XDP_EXT_HELPER_FN_BASE 0xFFFF
 
-#ifndef __doxygen
 #define EBPF_HELPER(return_type, name, args) typedef return_type(*const name##_t) args
-#endif
+EBPF_HELPER(int, bpf_xdp_adjust_head, (xdp_md_t * ctx, int delta));
+
 
 typedef enum
 {
@@ -59,7 +59,6 @@ typedef enum
  * @retval 0 The operation was successful.
  * @retval <0 A failure occurred.
  */
-EBPF_HELPER(int, bpf_xdp_adjust_head, (xdp_md_t * ctx, int delta));
 #ifndef __doxygen
 #define bpf_xdp_adjust_head ((bpf_xdp_adjust_head_t)BPF_FUNC_xdp_adjust_head)
 #endif

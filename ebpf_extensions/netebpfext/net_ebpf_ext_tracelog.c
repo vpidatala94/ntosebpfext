@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: MIT
 
 #include "net_ebpf_ext.h"
-
 #include <TraceLoggingProvider.h>
 #include <winmeta.h>
 

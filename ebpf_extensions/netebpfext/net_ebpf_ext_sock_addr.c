@@ -6,9 +6,8 @@
  * @brief This file implements the hook for the CGROUP_SOCK_ADDR program type and associated attach types, on eBPF for
  * Windows.
  */
-
-#include "ebpf_shared_framework.h"
 #include "net_ebpf_ext_sock_addr.h"
+#include "net_ebpf_ext_tracelog.h"
 
 #define TARGET_PROCESS_ID 1234
 #define EXPIRY_TIME 60000 // 60 seconds in ms.

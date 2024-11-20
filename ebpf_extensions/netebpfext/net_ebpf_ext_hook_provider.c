@@ -1,8 +1,8 @@
 // Copyright (c) eBPF for Windows contributors
 // SPDX-License-Identifier: MIT
 
+#include "net_ebpf_ext.h"
 #include "ebpf_extension_uuids.h"
-#include "net_ebpf_ext_hook_provider.h"
 
 #define NET_EBPF_EXT_STACK_EXPANSION_SIZE 1024 * 4
 

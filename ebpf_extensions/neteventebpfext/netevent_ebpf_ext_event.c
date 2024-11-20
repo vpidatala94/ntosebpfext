@@ -9,7 +9,6 @@
 #include "ebpf_netevent_hooks.h"
 #include "netevent_ebpf_ext_event.h"
 #include "netevent_ebpf_ext_program_info.h"
-
 #include <errno.h>
 
 //
