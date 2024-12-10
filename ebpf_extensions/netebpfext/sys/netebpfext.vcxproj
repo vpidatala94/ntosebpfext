@@ -123,6 +123,7 @@
     <ClInclude Include="..\..\..\libs\ebpf_ext\ebpf_ext_hook_provider.h" />
     <ClInclude Include="..\..\..\libs\ebpf_ext\ebpf_ext_prog_info_provider.h" />
     <ClInclude Include="..\..\..\libs\ebpf_ext\ebpf_ext_tracelog.h" />
+    <ClInclude Include="..\ebpf_shared_framework.h" />
     <ClInclude Include="..\net_ebpf_ext.h" />
     <ClInclude Include="..\net_ebpf_ext_bind.h" />
     <ClInclude Include="..\net_ebpf_ext_hook_provider.h" />

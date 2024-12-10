@@ -93,12 +93,6 @@
     <ClInclude Include="netebpfext_platform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\packages\eBPF-for-Windows.0.18.0\build\native\include\ebpf_windows.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\packages\eBPF-for-Windows.0.18.0\build\native\include\ebpf_base.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\libs\ebpf_ext\ebpf_ext.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -111,13 +105,8 @@
     <ClInclude Include="..\..\..\libs\ebpf_ext\ebpf_ext_tracelog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\packages\eBPF-for-Windows.0.18.0\build\native\include\ebpf_extension.h">
+    <ClInclude Include="..\ebpf_shared_framework.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="..\..\..\resource\ebpf_ext_resource.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
   </ItemGroup>
 </Project>

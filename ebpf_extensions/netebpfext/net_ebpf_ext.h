@@ -6,26 +6,20 @@
  * @file
  * @brief Header file for structures/prototypes of the driver.
  */
-#include "cxplat.h"
-#include "ebpf_extension.h"
+#include "sys\netebpfext_platform.h"
+#include "ebpf_nethooks.h"
+#include "ebpf_program_attach_type_guids.h"
 #include "ebpf_program_types.h"
-#include "ebpf_result.h"
+#include "ebpf_shared_framework.h"
 #include "ebpf_windows.h"
-#include "shared_context.h"
-
-#include <specstrings.h>
-#include <stdint.h>
-#include "ndis.h"
 #include "net_ebpf_ext_hook_provider.h"
 #include "net_ebpf_ext_prog_info_provider.h"
 #include "net_ebpf_ext_program_info.h"
 #include "net_ebpf_ext_tracelog.h"
-#include "sys\netebpfext_platform.h"
 
 #include <guiddef.h>
 #include <netioapi.h>
 #include <netiodef.h>
-
 
 #define NET_EBPF_EXTENSION_POOL_TAG 'Nfbe'
 #define NET_EBPF_EXTENSION_NPI_PROVIDER_VERSION 0
