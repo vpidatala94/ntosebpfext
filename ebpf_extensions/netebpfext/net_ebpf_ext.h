@@ -6,7 +6,7 @@
  * @file
  * @brief Header file for structures/prototypes of the driver.
  */
-#include "sys\netebpfext_platform.h"
+
 #include "ebpf_nethooks.h"
 #include "ebpf_program_attach_type_guids.h"
 #include "ebpf_program_types.h"
@@ -16,7 +16,11 @@
 #include "net_ebpf_ext_prog_info_provider.h"
 #include "net_ebpf_ext_program_info.h"
 #include "net_ebpf_ext_tracelog.h"
-
+#ifdef SYS
+#include "sys\netebpfext_platform.h"
+#else
+#include "netebpfext_platform.h"
+#endif
 #include <guiddef.h>
 #include <netioapi.h>
 #include <netiodef.h>

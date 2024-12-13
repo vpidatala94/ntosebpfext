@@ -27,6 +27,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ntosebpfext", "ntosebpfext", "{E8184DFB-C7EA-4913-9F63-6E61D4B9CBB1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "neteventebpfext", "neteventebpfext", "{1808952B-4865-4EDF-9393-8E52F60D4D20}"
+	ProjectSection(SolutionItems) = preProject
+		ebpf_extensions\netebpfext\net_ebpf_ext.c = ebpf_extensions\netebpfext\net_ebpf_ext.c
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{C9EAA3D8-0D9C-4E28-BD1F-13017476EAE5}"
 EndProject
