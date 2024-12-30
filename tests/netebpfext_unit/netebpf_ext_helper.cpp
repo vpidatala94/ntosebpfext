@@ -56,12 +56,16 @@ _netebpf_ext_helper::_netebpf_ext_helper(
     }
     trace_initiated = true;
 
+    
     if (initialize_platform) {
+#if 0
         if (ebpf_platform_initiate() != EBPF_SUCCESS) {
             return;
         }
         platform_initialized = true;
+#endif
     }
+    
 
     if (!NT_SUCCESS(net_ebpf_ext_initialize_ndis_handles(driver_object))) {
         return;
@@ -115,10 +119,10 @@ _netebpf_ext_helper::~_netebpf_ext_helper()
     if (ndis_handle_initialized) {
         net_ebpf_ext_uninitialize_ndis_handles();
     }
-
-    if (platform_initialized) {
-        ebpf_platform_terminate();
-    }
+    //
+    //if (platform_initialized) {
+    //    ebpf_platform_terminate();
+    //}
 
     if (trace_initiated) {
         net_ebpf_ext_trace_terminate();

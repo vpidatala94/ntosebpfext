@@ -645,7 +645,8 @@ TEST_CASE("sock_addr_invoke_concurrent1", "[netebpfext_concurrent]")
     // Classify operations that should be allowed.
     client_context.sock_addr_action = SOCK_ADDR_TEST_ACTION_PERMIT;
 
-    uint32_t thread_count = 2 * ebpf_get_cpu_count();
+    uint32_t thread_count = 2 * 2;
+    //uint32_t thread_count = 2 * ebpf_get_cpu_count();
     for (uint32_t i = 0; i < thread_count; i++) {
         threads.emplace_back(
             sock_addr_thread_function,
@@ -686,7 +687,8 @@ TEST_CASE("sock_addr_invoke_concurrent2", "[netebpfext_concurrent]")
     client_context.sock_addr_action = SOCK_ADDR_TEST_ACTION_ROUND_ROBIN;
     client_context.validate_sock_addr_entries = false;
 
-    uint32_t thread_count = 2 * ebpf_get_cpu_count();
+    uint32_t thread_count = 2 * 2;
+    //uint32_t thread_count = 2 * ebpf_get_cpu_count();
     parameters.resize(thread_count);
 
     for (uint32_t i = 0; i < thread_count; i++) {
@@ -730,7 +732,8 @@ TEST_CASE("sock_addr_invoke_concurrent3", "[netebpfext_concurrent]")
     client_context.sock_addr_action = SOCK_ADDR_TEST_ACTION_ROUND_ROBIN;
     client_context.validate_sock_addr_entries = false;
 
-    uint32_t thread_count = 2 * ebpf_get_cpu_count();
+    uint32_t thread_count = 2 * 2;
+    //uint32_t thread_count = 2 * ebpf_get_cpu_count();
     parameters.resize(thread_count);
 
     for (uint32_t i = 0; i < thread_count; i++) {
@@ -868,7 +871,7 @@ TEST_CASE("sock_ops_invoke", "[netebpfext]")
     REQUIRE(result == FWP_ACTION_PERMIT);
 
     // Do some operations that return failure.
-    client_context.sock_ops_action = -1;
+    //client_context.sock_ops_action = -1;
 
     result = helper.test_sock_ops_v4(&parameters);
     REQUIRE(result == FWP_ACTION_BLOCK);

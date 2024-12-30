@@ -9,21 +9,6 @@
 #include "ebpf_program_types.h"
 #include "ebpf_shared_framework.h"
 
-#if 0
-#include "ebpf_ext.h"
-#include "ebpf_extension.h"
-#include "ebpf_nethooks.h"
-#include "ebpf_program_types.h"
-#include "cxplat.h"
-#include "ebpf_extension.h"
-#include "ebpf_result.h"
-#include "ebpf_windows.h"
-#include "shared_context.h"
-
-#include <specstrings.h>
-#include <stdint.h>
-#endif
-
 #define XDP_EXT_HELPER_FUNCTION_START EBPF_MAX_GENERAL_HELPER_FUNCTION
 
 #define HELPER_FUNCTION_REALLOCATE_PACKET TRUE
