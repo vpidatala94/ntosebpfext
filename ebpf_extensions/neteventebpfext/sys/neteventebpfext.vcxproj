@@ -190,7 +190,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);BINARY_COMPATIBLE=0;NT;UNICODE;_UNICODE;NDIS60;POOL_NX_OPTIN_AUTO</PreprocessorDefinitions>
     </ResourceCompile>
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(DDK_INC_PATH);$(SolutionDir)include;$(SolutionDir)libs\include\kernel;$(SolutionDir)include\kernel;$(SolutionDir)resource;$(SolutionDir)neteventebpfext;$(SolutionDir)external\usersim\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(DDK_INC_PATH);$(SolutionDir)include;$(SolutionDir)libs\include\kernel;$(SolutionDir)include\kernel;$(SolutionDir)resource;$(SolutionDir)neteventebpfext</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);BINARY_COMPATIBLE=0;NT;UNICODE;_UNICODE;NDIS60;POOL_NX_OPTIN_AUTO;PROVIDER_NAME=netevent</PreprocessorDefinitions>
     </ClCompile>
     <Midl>
@@ -225,7 +225,6 @@
     <ClInclude Include="..\..\..\libs\ebpf_ext\ebpf_ext_hook_provider.h" />
     <ClInclude Include="..\..\..\libs\ebpf_ext\ebpf_ext_prog_info_provider.h" />
     <ClInclude Include="..\..\..\libs\ebpf_ext\ebpf_ext_tracelog.h" />
-    <ClInclude Include="..\..\..\packages\eBPF-for-Windows.0.18.0\build\native\include\ebpf_extension.h" />
     <ClInclude Include="..\netevent_ebpf_ext_event.h" />
     <ClInclude Include="..\netevent_ebpf_ext_program_info.h" />
     <ClInclude Include="resource.h" />
